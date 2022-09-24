@@ -1,0 +1,38 @@
+
+.client__title{
+    font-size:36px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom:50px ;
+}
+.client__list{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+.client__link{
+    @extend %align;
+    width: 170px;
+    height: 92px;
+    border: solid 1px var(--client-logo-border-color);
+    border-radius: 4px;
+    transition: border var(--transition-duration) var(--transition-timing-function);
+    &:hover,
+    &:focus{
+    border: solid 1px var(--accent-color);
+}
+
+}
+.client__logo{
+    width:106px ;
+    height:60px ;
+    fill: var(--client-logo-color);
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+    .client__link:hover &,
+    .client__link:focus &{
+    fill: var(--accent-color);
+}
+}
+
+

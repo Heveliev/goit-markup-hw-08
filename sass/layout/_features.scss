@@ -1,0 +1,31 @@
+.features{  padding-top: 0;
+}
+.features__title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.features__list{
+    display: flex;
+    column-gap: 30px;
+}
+.features__img_box{
+    position: relative;
+}
+.features__text_backdrop{
+    background-color:var(--features-text-backdrop-background-color);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.features__text{
+    font-weight: 700;
+    line-height: 1.14;
+    @extend %align;
+    height: 70px;
+    text-transform: uppercase;
+    color: var(--text-light-color);
+    }

@@ -1,0 +1,36 @@
+.description{
+    padding-top:86px;
+
+}
+
+    .description__list{      
+    column-gap: 30px ;
+    display: flex;
+   flex-wrap: wrap;
+    }
+    .list__item{
+        max-width: 270px;
+        flex-basis: calc((100% - 30px) / 4);
+        
+    }
+    .list__item_icon{
+        width: 70px;
+        height: 70px;
+    }
+    .list__item_icon_optoins{
+        @extend %align;
+        width: 270px;
+        height: 120px;
+        background-color: var(--svg-background-color);
+        margin-bottom: 30px;}
+.description__card_subtitle{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.description__card_text{
+    font-weight: 400;
+    line-height: 1.72;
+    color: var(--secondary-text-dark-color);}

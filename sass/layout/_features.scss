@@ -1,4 +1,5 @@
-.features{  padding-top: 0;
+.features{ 
+    padding-top: 0;
 }
 .features__title{
     font-size: 36px;
@@ -29,3 +30,8 @@
     text-transform: uppercase;
     color: var(--text-light-color);
     }
+@media screen and (max-width: 1199px){
+    .features{
+         display: none;
+    }
+}

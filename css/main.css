@@ -844,9 +844,6 @@ body {
   .features {
     display: none;
   }
-  .features__img {
-    display: none;
-  }
 }
 .team {
   background-color: var(--team-background-color);

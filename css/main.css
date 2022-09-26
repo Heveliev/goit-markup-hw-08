@@ -1304,6 +1304,7 @@ body {
   border-radius: 4px;
   padding: 6px 22px;
   transition: color var(--transition-duration) var(--transition-timing-function), background-color var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function);
+  color: var(--primary-text-dark-color);
 }
 .portfolio__btn:hover, .portfolio__btn:focus {
   background-color: var(--accent-color);

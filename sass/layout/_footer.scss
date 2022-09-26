@@ -3,7 +3,7 @@
     padding: 60px 0;
 }
 .address{font-style: normal;
-    margin-bottom: 60px
+    margin-bottom: 60px;
 }
 .address__list{
     display: flex;
@@ -34,6 +34,11 @@
     .footer__social{
         margin-bottom: 60px;
     }
+    .footer__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 .footer__text {
     font-weight: 700;
     line-height: 1.14;
@@ -56,9 +61,6 @@ text-align: center;}
         fill: var(--footer-social-icon-color);
         width:20px ;
     height: 20px;}
-.footer__form{
-
-}
 .footer__form_text{
         font-weight: 700;
         line-height: 1.14;
@@ -102,91 +104,102 @@ text-align: center;}
         fill:var(--footer-icon-send-fill-color);
         display: block;
     }
-// .footer_flex{
-//     display: flex;
-//     align-items: baseline;
+
+
+    @media screen and (min-width: 768px) {
+.footer-address-social_box{
+    display: flex;
+justify-content:space-around;
+    }
+    .address{font-style: normal;
+        margin-bottom:0;
+    }
+    .footer__social{
+        margin-bottom: 0;
+    }
+
+    .footer__input{
+        margin-bottom: 20px;
+        color: var(--text-light-color);
+            padding: 15px 16px ;
+            width: 450px;
+        }
+    }
+@media screen and (min-width: 1200px){
+        .footer_flex{
+            display: flex;
+            align-items: baseline;
+            
+        }
+        .footer__logo_position{
+            margin-right: 68px;
+        }
+        .address__list{
+            display: block;
+        }
+        .address__location{
+    margin-bottom: 9px;
+}
+.location__link{
+    transition: color var(--transition-duration) var(--transition-timing-function);
+    &:hover,
+    &:focus{
+        color:var(--accent-color)
+        }
+}
+.footer__email{
+    transition: color var(--transition-duration) var(--transition-timing-function);
+    &:hover,
+    &:focus{
+        color:var(--accent-color)
+        }
+}
+.footer__tel{
+    transition: color var(--transition-duration) var(--transition-timing-function);
+    &:hover,
+    &:focus{
+    color:var(--accent-color)
+    }
+    }
+
+.addres__email{
+    margin-bottom: 9px;
+    }
+    .footer__text {
+    text-align: left;}
+
+    .footer__social{
+        margin-right: auto;
+    }
     
-// }
-// .footer__logo_position{
-//     margin-right: 68px;
-// }
-// .address__location{
-//     margin-bottom: 9px;
-// }
-// .location__link{
-//     transition: color var(--transition-duration) var(--transition-timing-function);
-//     &:hover,
-//     &:focus{
-//         color:var(--accent-color)
-//         }
-//     }
-//     .addres__email{
-//         margin-bottom: 9px;
-//     }
-// .footer__email{
-//     font-weight: 400;
-//     line-height: 1.72;
-//     color: var(--footer-contact-color);
-//     transition: color var(--transition-duration) var(--transition-timing-function);
-//     &:hover,
-//     &:focus{
-//         color:var(--accent-color)
-//         }
-// }
-// .footer__tel{
-//     font-weight: 400;
-//     line-height: 1.72;
-//     color: var(--footer-contact-color);
-//     transition: color var(--transition-duration) var(--transition-timing-function);
-//     &:hover,
-//     &:focus{
-//     color:var(--accent-color)
-//     }
-//     }
-    
-// .footer__social{
-//         margin-right: auto;
+.footer__social_link{
 
-//     }
+    transition: background-color var(--transition-duration) var(--transition-timing-function) ;
+    &:hover,
+    &:focus{
+    background-color: var(--accent-color);
+}
+}  
+    .footer__form_box{
+        margin-left: auto;
+    }
+    .footer__form{
+        column-gap: 12px;
+        flex-direction:row;
 
 
-// .footer__social_link{
-// 
-//         transition: background-color var(--transition-duration) var(--transition-timing-function) ;
-//         &:hover,
-//         &:focus{
-//         background-color: var(--accent-color);
-//     }
-//     }
-// .footer__social_list{
-//     display: flex;
-//     column-gap: 10px;
-//     justify-content: center
-    
-// }
+    }
+.footer__form_text{
+        text-align: left;
+    }
+.footer__input{
+    margin-bottom:0;
+        width: 358px;
+    }
+.footer__form_btn{
+    margin-left: 0;
+    margin-right: 0;
 
-
-//     .footer__form_box{
-//         margin-left: auto;
-//     }
-//     .footer__form{
-//         display: flex;
-//         column-gap: 12px;
-
-//     }
-
-//     .footer__input{
-//     color: var(--text-light-color);
-//         padding: 15px 16px ;
-//         width: 358px;
-//         border: 1px solid var(--footer-input-border-color);
-//         background-color:var(--footer-input-background-color) ;
-//         border-radius: 4px;
-//         &::placeholder{
-//             font-size: 16px;
-//             font-weight: 400;
-//             line-height: 1.25;
-//         color: var(--footer-input-placeholder-color);
-//         }
-//     }
+    }
+}
     

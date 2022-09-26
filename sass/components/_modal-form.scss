@@ -77,6 +77,7 @@
 
 
 .form__checkbox_icon{
+    margin-top: 20px;
     margin-right: 8.38px;
     width: 16px;
     height: 15px;
@@ -144,6 +145,8 @@
     .form__message{
         height:120px ;
     }
+    .form__checkbox_icon{
+        margin-top:0;}
 }
 @media screen and (min-width: 1200px) {
     .form__policy_text{

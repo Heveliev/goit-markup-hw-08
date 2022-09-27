@@ -33,6 +33,9 @@
     }
 
 @media screen and (min-width: 768px) {
+    .page-header{
+        padding-bottom: 0;
+    }
     .header_flex{
         justify-content:flex-start;
         }
@@ -107,8 +110,6 @@
              }
 }
 @media screen and (min-width: 1200px) {
-    
-   
     .header-contact__item{
         margin-bottom: 0;
      }

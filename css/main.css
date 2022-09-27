@@ -546,6 +546,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .page-header {
+    padding-bottom: 0;
+  }
   .header_flex {
     justify-content: flex-start;
   }
@@ -957,6 +960,9 @@ body {
     max-width: 354px;
     flex-basis: 50%;
   }
+  .team__card:not(:last-of-type) {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team__title {
@@ -1204,6 +1210,7 @@ body {
   .footer-address-social_box {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 60px;
   }
   .address {
     font-style: normal;
@@ -1220,6 +1227,9 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
+  .footer-address-social_box {
+    margin-bottom: 0;
+  }
   .footer_flex {
     display: flex;
     align-items: baseline;

@@ -110,6 +110,7 @@ text-align: center;}
 .footer-address-social_box{
     display: flex;
 justify-content:space-around;
+margin-bottom: 60px;
     }
     .address{font-style: normal;
         margin-bottom:0;
@@ -126,11 +127,15 @@ justify-content:space-around;
         }
     }
 @media screen and (min-width: 1200px){
+    .footer-address-social_box{
+
+    margin-bottom: 0;}
         .footer_flex{
             display: flex;
             align-items: baseline;
             
         }
+
         .footer__logo_position{
             margin-right: 68px;
         }

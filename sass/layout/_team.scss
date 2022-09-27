@@ -22,8 +22,8 @@
         border-bottom-right-radius: 4px ;
         background-color: var(--team-card-background-color);}
         .team__card:not(:last-of-type){
-            margin-bottom: 30px;
-        }
+            margin-bottom: 30px;}
+
 
 .team__card_down{
      padding-top: 30px;
@@ -83,6 +83,9 @@
     max-width: 354px;
     flex-basis: calc((100%)/2);
 }
+.team__card:not(:last-of-type){
+    margin-bottom: 0;
+}
     }
     @media screen and (min-width: 1200px) {
     .team__title{
@@ -105,6 +108,7 @@
     .team__card_down{
         padding-bottom: 30px;
     }
+
     .social__link{
         border-radius:50%;
         transition: background-color var(--transition-duration) var(--transition-timing-function);
@@ -124,4 +128,5 @@
     
     }
     }
+
 }
